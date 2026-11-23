@@ -1,0 +1,8 @@
+{
+    "url": "https://movie-vue-xi.vercel.app",
+    "endpoints": {
+        "register": "/register",
+        "login": "/login",
+        "movies": "/movies"
+    }
+}
