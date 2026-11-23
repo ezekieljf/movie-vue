@@ -24,6 +24,8 @@ import MoviePage from './pages/MoviePage.vue';
 import AddMoviePage from './pages/AddMoviePage.vue';
 import EditMoviePage from './pages/EditMoviePage.vue';
 
+import AddCommentPage from './pages/AddCommentPage.vue';
+
 
 const router = createRouter({
     history: createWebHistory(),
@@ -66,6 +68,11 @@ const router = createRouter({
             path: '/editMovie/:id',
             name: 'EditMovie',
             component: EditMoviePage
+        },
+        {
+            path: '/addComment/:id',
+            name: 'AddComment',
+            component: AddCommentPage
         }
     ]
 })
