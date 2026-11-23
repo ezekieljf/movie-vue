@@ -92,8 +92,19 @@
 
       <div v-else class="mt-5">
           <hr class="border-secondary">
-          <h3 class="fw-bold mb-3">Comments</h3>
-          <p class="text-secondary">No comments yet.</p>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+              <h3 class="fw-bold mb-0">Comments</h3>
+
+              <RouterLink
+                  class="btn btn-danger"
+                  :to="{
+                      name: 'AddComment',
+                      params: { id: movie._id }
+                  }"
+              >
+                  + Add Comment
+              </RouterLink>
+          </div>
       </div>
 
     </div>
